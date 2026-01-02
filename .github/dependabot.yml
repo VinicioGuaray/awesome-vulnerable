@@ -1,13 +1,15 @@
 version: 2
 updates:
-  # Mantener actualizadas las dependencias de npm
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 10
-  
-  # Mantener actualizadas las dependencias de GitHub Actions
+    reviewers:
+      - "[mi-usuario]"
+    assignees:
+      - "[mi-usuario]"
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
